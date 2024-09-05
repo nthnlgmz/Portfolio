@@ -1,157 +1,124 @@
-/*===== SHOW MENU "TOGGLE BUTTON" =====*/
-const showMenu= (toggleId, navId) =>{
-  const toggle= document.getElementById(toggleId),
-  nav=document.getElementById(navId)
-
-document.addEventListener('DOMContentLoaded', function () {
-    var swiper = new Swiper('#swiperContainer', {
-        loop: false,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
+const showMenu = (e, o) => {
+  let t = document.getElementById(e),
+    n = document.getElementById(o);
+  document.addEventListener("DOMContentLoaded", function () {
+    new Swiper("#swiperContainer", {
+      loop: !1,
+      pagination: { el: ".swiper-pagination", clickable: !0 }
     });
-});
-
-if(nav && toggle){
-    toggle.addEventListener("click", ()=>{
-        nav.classList.toggle('show--menu')
-    })
-}
-}
-showMenu("nav-toggle","nav-menu");
-//////////////////////////////////////////////////////////////////////////////////
-
-
-
-/*===== REMOVE MENU MOBILE AFTER CLICK ON THE LINK =====*/
-const navLink =document.querySelectorAll(".nav__link");
-const linkAction= ()=>{
-    const navMenu=document.getElementById("nav-menu")
-    navMenu.classList.remove("show--menu")
-}
-navLink.forEach( ev => ev.addEventListener("click", linkAction));
-////////////////////////////////////////////////////////////////////////////////
-
-
-/*===== SCROLL SECTIONS ACTIVE LINK =====*/
-//querySelector => returns a single object with the first HTML element that matches the 'selectors'. If no matching node is found, null is returned
-//querySelectorAll => returns an array/NodeList of objects with all the HTML elements that match the 'selectors' or an empty NodeList if no matches are found.
-
-
-
-function onScroll(event){
-  var sections = document.querySelectorAll('#nav-menu a');
-  var scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-  
-  for( var i = 0; i < sections.length; i++ ){
-    var currLink = sections[i]; 
-    var val = currLink.getAttribute('href');
-    var refElement = document.querySelector(val);
-      if( refElement.offsetTop <= scrollPos && ( refElement.offsetTop + refElement.offsetHeight > scrollPos)){
-        document.querySelector('#nav-menu ul li a').classList.remove('active--link');
-        currLink.classList.add('active--link');
-      }else{
-         currLink.classList.remove('active--link');
-       }
-  }
-  
-  
-                                                           
-    
+  }),
+    n &&
+      t &&
+      t.addEventListener("click", () => {
+        n.classList.toggle("show--menu");
+      });
 };
-
-window.document.addEventListener('scroll', onScroll );
-
-
-
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-/*===== CHANGE BACKGROUND HEADER =====*/ 
-const scrollHeader= ()=>{
-    const header=document.getElementById("header");
-    if(this.scrollY >=200) {header.classList.add('scroll--header')}
-    else{
-        header.classList.remove('scroll--header')
-    }
-}
-window.addEventListener("scroll",scrollHeader)
-////////////////////////////////////////////////////////////////////////////////////
-
-
-
-/*===== SHOW SCROLL TOP =====*/ 
-const scrollTop= ()=>{
-  const scrollTop=document.getElementById("scroll-top");
-  if(this.scrollY >=560) {scrollTop.classList.add('show--scroll')}
-  else{
-    scrollTop.classList.remove('show--scroll')
+showMenu("nav-toggle", "nav-menu");
+const navLink = document.querySelectorAll(".nav__link"),
+  linkAction = () => {
+    let e = document.getElementById("nav-menu");
+    e.classList.remove("show--menu");
+  };
+function onScroll(e) {
+  for (
+    var o = document.querySelectorAll("#nav-menu a"),
+      t =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop,
+      n = 0;
+    n < o.length;
+    n++
+  ) {
+    var l = o[n],
+      a = l.getAttribute("href"),
+      r = document.querySelector(a);
+    r.offsetTop <= t && r.offsetTop + r.offsetHeight > t
+      ? (document
+          .querySelector("#nav-menu ul li a")
+          .classList.remove("active--link"),
+        l.classList.add("active--link"))
+      : l.classList.remove("active--link");
   }
 }
-window.addEventListener("scroll",scrollTop)
-////////////////////////////////////////////////////////////////////////////////////
-
-
-
-/*===== MIXITUP FILTER PORTFOLIO =====*/ 
-var containerEl = document.querySelector('.portfolio__container');
-if (containerEl){
-const mixer = mixitup('.portfolio__container', {
-  selectors: {
-      target: '.portfolio__content'
-  },
-  animation: {
-      duration: 400
-  }
-});
-}
-/* Link active portfolio */ 
-var numberButtons = document.querySelectorAll(".portfolio__item")
-for (var i = 0; i < numberButtons.length; i++) {
+navLink.forEach((e) => e.addEventListener("click", linkAction)),
+  window.document.addEventListener("scroll", onScroll);
+const scrollHeader = () => {
+  let e = document.getElementById("header");
+  this.scrollY >= 200
+    ? e.classList.add("scroll--header")
+    : e.classList.remove("scroll--header");
+};
+window.addEventListener("scroll", scrollHeader);
+const scrollTop = () => {
+  let e = document.getElementById("scroll-top");
+  this.scrollY >= 560
+    ? e.classList.add("show--scroll")
+    : e.classList.remove("show--scroll");
+};
+window.addEventListener("scroll", scrollTop);
+var containerEl = document.querySelector(".portfolio__container");
+containerEl &&
+  mixitup(".portfolio__container", {
+    selectors: { target: ".portfolio__content" },
+    animation: { duration: 400 }
+  });
+for (
+  var numberButtons = document.querySelectorAll(".portfolio__item"), i = 0;
+  i < numberButtons.length;
+  i++
+)
   numberButtons[i].addEventListener("click", changeButton.bind(null, i));
+function changeButton(e, o) {
+  for (
+    var t = document.getElementsByClassName("active--portfolio"), n = 0;
+    n < t.length;
+    n++
+  )
+    t[n].classList.remove("active--portfolio");
+  o.target.classList.add("active--portfolio");
 }
-
-function changeButton(selected, e) {
-  var oldActive = document.getElementsByClassName("active--portfolio");
-  for (var i = 0; i < oldActive.length; i++) {
-    oldActive[i].classList.remove("active--portfolio");
-  }
-  e.target.classList.add("active--portfolio");
-}
-//////////////////////////////////////////////////////////////////////////////////////////////
-
-
-/*===== SWIPER CAROUSEL =====*/ 
-const mySwiper = new Swiper('.reviews__container ', {
-  // Optional parameters
-  spaceBetween:16,
-  loop: true,
-  grabCursor:true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable:true,
-  },
-  breakpoints:{
-    640:{
-      slidesPerView:2,
-    },
-    1024:{
-      slidesPerView:3,
-    },
-  }
- 
-})
-//////////////////////////////////////////////////////////////////////////////////
-
-
-
-/*===== GSAP ANIMATION =====*/ 
-gsap.from(".home__img", {opacity:0,duraction:2, delay:0.2, x:60})
-gsap.from(".home__data", {opacity:0,duraction:2, delay:0.8, y:25})
-gsap.from(".home__greeting, .home__name, .home__professional , .home__button", {opacity:0,duraction:2, delay:1, y:25, ease:'expo.out', stagger:.2})
-gsap.from(".nav__logo, .nav__toggle", {opacity:0,duraction:2, delay:1.5, y:25, ease:'expo.out', stagger:.2})
-gsap.from(".nav__item", {opacity:0,duraction:2, delay:1.8, y:25, ease:'expo.out', stagger:.2})
-gsap.from(".home__social-icon", {opacity:0,duraction:2, delay:2.3, y:25, ease:'expo.out', stagger:.2})
+const mySwiper = new Swiper(".reviews__container ", {
+  spaceBetween: 16,
+  loop: !0,
+  grabCursor: !0,
+  pagination: { el: ".swiper-pagination", clickable: !0 },
+  breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+});
+gsap.from(".home__img", { opacity: 0, duraction: 2, delay: 0.2, x: 60 }),
+  gsap.from(".home__data", { opacity: 0, duraction: 2, delay: 0.8, y: 25 }),
+  gsap.from(
+    ".home__greeting, .home__name, .home__professional , .home__button",
+    {
+      opacity: 0,
+      duraction: 2,
+      delay: 1,
+      y: 25,
+      ease: "expo.out",
+      stagger: 0.2
+    }
+  ),
+  gsap.from(".nav__logo, .nav__toggle", {
+    opacity: 0,
+    duraction: 2,
+    delay: 1.5,
+    y: 25,
+    ease: "expo.out",
+    stagger: 0.2
+  }),
+  gsap.from(".nav__item", {
+    opacity: 0,
+    duraction: 2,
+    delay: 1.8,
+    y: 25,
+    ease: "expo.out",
+    stagger: 0.2
+  }),
+  gsap.from(".home__social-icon", {
+    opacity: 0,
+    duraction: 2,
+    delay: 2.3,
+    y: 25,
+    ease: "expo.out",
+    stagger: 0.2
+  });
