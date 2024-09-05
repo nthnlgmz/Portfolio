@@ -85,13 +85,13 @@ const mySwiper = new Swiper(".reviews__container ", {
   pagination: { el: ".swiper-pagination", clickable: !0 },
   breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
 });
-gsap.from(".home__img", { opacity: 0, duraction: 2, delay: 0.2, x: 60 }),
-  gsap.from(".home__data", { opacity: 0, duraction: 2, delay: 0.8, y: 25 }),
+gsap.from(".home__img", { opacity: 0, duration: 2, delay: 0.2, x: 60 }),
+  gsap.from(".home__data", { opacity: 0, duration: 2, delay: 0.8, y: 25 }),
   gsap.from(
     ".home__greeting, .home__name, .home__professional , .home__button",
     {
       opacity: 0,
-      duraction: 2,
+      duration: 2,
       delay: 1,
       y: 25,
       ease: "expo.out",
@@ -100,7 +100,7 @@ gsap.from(".home__img", { opacity: 0, duraction: 2, delay: 0.2, x: 60 }),
   ),
   gsap.from(".nav__logo, .nav__toggle", {
     opacity: 0,
-    duraction: 2,
+    duration: 2,
     delay: 1.5,
     y: 25,
     ease: "expo.out",
@@ -108,7 +108,7 @@ gsap.from(".home__img", { opacity: 0, duraction: 2, delay: 0.2, x: 60 }),
   }),
   gsap.from(".nav__item", {
     opacity: 0,
-    duraction: 2,
+    duration: 2,
     delay: 1.8,
     y: 25,
     ease: "expo.out",
@@ -116,7 +116,7 @@ gsap.from(".home__img", { opacity: 0, duraction: 2, delay: 0.2, x: 60 }),
   }),
   gsap.from(".home__social-icon", {
     opacity: 0,
-    duraction: 2,
+    duration: 2,
     delay: 2.3,
     y: 25,
     ease: "expo.out",
