@@ -1,307 +1,273 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       
-        <!-- ===== SWIPER CSS ===== -->
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-        <!-- ===== BOX ICONS ===== -->
-        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- ===== Fontawsome ICONS ===== -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
-        
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="style.css">
+  <!-- ===== SWIPER CSS ===== -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-        <title>Personal Portfolio</title>
-    </head>
-    <body>
-        <!--===== SCROLL TOP =====-->
-        <a href="#" class="scrolltop" id="scroll-top">
-            <i class='bx bx-chevron-up scrolltop__icon'></i>
-        </a>
-        
-        <!--===== HEADER =====-->
-        <header class="l-header" id="header">
-            <nav class="nav bd-container" id="navbar">
-                <a href="#" class="nav__logo">Nathaniel Gomez</a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"> <a href="#home" class="nav__link active--link">Home</a></li>
-                        <li class="nav__item"> <a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"> <a href="#services" class="nav__link">Services</a></li>
-                        <li class="nav__item"> <a href="#portfolio" class="nav__link">Portfolio</a></li>
-                        <li class="nav__item"> <a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+  <!-- ===== BOX ICONS ===== -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-        <main class="l-main">
-        
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home__container bd-container bd-grid">
-                    <div class="home__data">
-                        <span class="home__greeting">Hello, My Name is</span>
-                        <h1 class="home__name">Nathaniel Gomez</h1>
-                        <span class="home__professional">Mechatronics Engineer/Freelancer</span>
-                   <!--     <a download=" " href="pdf/cv.pdf" class="button button-light home__button">Download Cv</a> -->
-                    </div>
-           
-                    <div class="home__social">
-                        <a href="https://www.facebook.com/nthnlgmz" class="home__social-icon">
-                            <i class='bx bxl-facebook'></i>
-                        </a>
-                        <a href="mailto:nthnlgmz08@gmail.com" class="home__social-icon">
-                            <i class='bx bx-envelope'></i>
-                        </a>
-                     <a href="https://www.linkedin.com/in/nthnlgmz" class="home__social-icon">
-    <i class='bx bxl-linkedin'></i>
-</a>
+  <!-- ===== Fontawsome ICONS ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
 
-                    </div>
+  <!-- ===== CSS ===== -->
+  <link rel="stylesheet" href="styles.css">
 
-                    <div class="home__img" >
-                        <img src="https://github.com/nthnlgmz/imgs/assets/143614589/6b7b0b98-9225-4919-a020-92b3b3f9b6e8" alt="" class="">
-                    </div>
+  <title>Nathaniel Gomez Portfolio</title>
+</head>
 
-                   
-                </div>
-            </section>
+<body>
+  <!--===== SCROLL TOP =====-->
+  <a href="#" class="scrolltop" id="scroll-top">
+    <i class='bx bx-chevron-up scrolltop__icon'></i>
+  </a>
 
+  <!--===== HEADER =====-->
+  <header class="l-header" id="header">
+    <nav class="nav bd-container" id="navbar">
+      <a href="#" class="nav__logo">Nathaniel Gomez</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"> <a href="#home" class="nav__link active--link">Home</a></li>
+          <li class="nav__item"> <a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"> <a href="#services" class="nav__link">Services</a></li>
+          <li class="nav__item"> <a href="#portfolio" class="nav__link">Portfolio</a></li>
+          <li class="nav__item"> <a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-menu'></i>
+      </div>
+    </nav>
+  </header>
 
-            
-            <!--===== ABOUT =====-->
-            <section class="about section bd-container" id="about"> 
-                <span class="section-subtitle">My History</span>
-                <h2 class="section-title">About Me</h2>
-                <div class="about__container bd-grid">
-                        <div class="about__data bd-grid">
-                            <p class="about__desc"><span>Hello, I am <br> </span>Mechatronics Engineering graduate and beginner in the freelancing industry, eager to contribute and grow alongside you in this journey, despite having limited experience and projects to propose.</p>
-                            <div>
-                                <span class="about__number">0</span>
-                                <span class="about__ach">Years of Experience</span>
-                            </div>
-                            <div>
-                                <span class="about__number">0</span>
-                                <span class="about__ach">Completed Projects</span>
-                            </div>
-                            <div>
-                                <span class="about__number">0</span>
-                                <span class="about__ach">Best Work Award</span>
-                            </div>
-                        
-                        </div>
+  <main class="l-main">
 
-                      <img src="https://github.com/nthnlgmz/imgs/assets/143614589/bb8182dc-3146-43a1-9dd0-f9f863568f22" alt="" class="about__img monochrome">
-                </div>
-            </section>
+    <!--===== HOME =====-->
+    <section class="home" id="home">
+      <div class="home__container bd-container bd-grid">
+        <div class="home__data">
+          <span class="home__greeting">Hello, My Name is</span>
+          <h1 class="home__name">Nathaniel Gomez</h1>
+          <span class="home__professional">Mechatronics Engineer</span>
+          <a download=" " href="mailto:nthnlgmz08@gmail.com?subject=Request For CV" target="_blank" class="button button-light home__button">Request CV</a>
+        </div>
 
-            <!--===== QUALIFICATION =====-->
-            <section class="quali section bd-container">
-                <span class="section-subtitle">Experience and Education</span>
-                <h2 class="section-title">Qualification</h2>
+        <div class="home__social">
+          <a href="https://www.facebook.com/nthnlgmz" class="home__social-icon">
+            <i class='bx bxl-facebook'></i>
+          </a>
+          <a href="mailto:nthnlgmz08@gmail.com" class="home__social-icon">
+            <i class='bx bx-envelope'></i>
+          </a>
+          <a href="https://www.linkedin.com/in/nthnlgmz" class="home__social-icon">
+            <i class='bx bxl-linkedin'></i>
+          </a>
 
-                <div class="quali__container bd-grid">
-                    <div class="quali__content">
-                        <h2 class="quali__title">
-                            <i class='bx bxs-briefcase-alt quali__title-icon' ></i>
-                            Work Experience
-                        </h2>
+        </div>
 
-                        <div class="bd-grid">
-                            <div class="quali__data">
-                                <h3 class="quali__area">-</h3>
-                                <div class="quali__box">
-                                    <span class="quali__work">
-                                        <i class='bx bx-briefcase-alt quali__icon' ></i>
-                                        -
-                                    </span>
-                                    <span class="quali__work">
-                                        <i class='bx bx-calendar-alt quali__icon' ></i>
-                                        -
-                                    </span>
-                                    
-                                </div>
-                            </div>
-                            
-                            
-                            <div class="quali__data">
-                                <h3 class="quali__area">-</h3>
-                                <div class="quali__box">
-                                    <span class="quali__work">
-                                        <i class='bx bx-briefcase-alt quali__icon' ></i>
-                                        -
-                                    </span>
-                                    <span class="quali__work">
-                                        <i class='bx bx-calendar-alt quali__icon' ></i>
-                                        -
-                                    </span>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="home__img">
+          <img src="https://github.com/nthnlgmz/imgs/assets/143614589/6b7b0b98-9225-4919-a020-92b3b3f9b6e8" alt="" class="">
+        </div>
 
+      </div>
+    </section>
 
+    <!--===== ABOUT =====-->
+    <section class="about section bd-container" id="about">
+      <span class="section-subtitle">My History</span>
+      <h2 class="section-title">About Me</h2>
+      <div class="about__container bd-grid">
+        <div class="about__data bd-grid">
+          <p class="about__desc"><span>Hello, I am <br> </span>Mechatronics Engineering graduate, I am passionate about leveraging my skills and knowledge to contribute meaningfully to your projects. While I am at the beginning of my career journey and have limited experience, I am enthusiastic about learning and growing in a collaborative environment. I am committed to applying my technical expertise and problem-solving abilities to help achieve project goals and deliver impactful results. I look forward to the opportunity to work together and make a positive contribution.</p>
+          <div>
+            <span class="about__number">0</span>
+            <span class="about__ach">Years of Experience</span>
+          </div>
+          <div>
+            <span class="about__number">2</span>
+            <span class="about__ach">Completed Projects</span>
+          </div>
+          <!--
+          <div>
+            <span class="about__number">0</span>
+            <span class="about__ach">Best Work Award</span>
+          </div>
+-->
+        </div>
 
+        <img src="https://github.com/user-attachments/assets/eb80fa99-76e2-4abd-9550-102ff7ebd4dd" alt="" class="about__img monochrome">
+      </div>
+    </section>
 
-                    <div class="quali__content">
-                        <h2 class="quali__title">
-                            <i class='bx bx-library quali__title-icon' ></i>
-                              Education
-                        </h2 >
+    <!--===== QUALIFICATION =====-->
+    <section class="quali section bd-container">
+      <span class="section-subtitle">Experience and Education</span>
+      <h2 class="section-title">Qualification</h2>
+      <!--
+      <div class="quali__container bd-grid">
+        <div class="quali__content">
+          <h2 class="quali__title">
+            <i class='bx bxs-briefcase-alt quali__title-icon'></i>
+            Work Experience
+          </h2>
 
-                        <div class="bd-grid">
-                            <div class="quali__data">
-                                <h3 class="quali__area">BS in Mechatronics Engineering</h3>
-                                <div class="quali__box">
-                                    <span class="quali__work">
-                                        <i class='bx bxs-book quali__icon' ></i>
-                                        Batangas State University - The National Engineering University - Alangilan Campus
-                                    </span>
-                                    <span class="quali__work">
-                                        <i class='bx bx-calendar-alt quali__icon' ></i>
-                                        Aug 2020 - July 2024
-                                    </span>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+          <div class="bd-grid">
+            <div class="quali__data">
+              <h3 class="quali__area">-</h3>
+              <div class="quali__box">
+                <span class="quali__work">
+                  <i class='bx bx-briefcase-alt quali__icon'></i>
+                  -
+                </span>
+                <span class="quali__work">
+                  <i class='bx bx-calendar-alt quali__icon'></i>
+                  -
+                </span>
 
-            <!--===== SERVICES =====-->
-            <section class="services section bd-container" id="services">
-                <span class="section-subtitle">What I offer</span>
-                <h2 class="section-title">Services</h2>
+              </div>
+            </div>
 
-                 <div class="services__container bd-grid">
-                    <!--  <div class="services__data">
-                        <i class='bx bxs-palette services__icon'></i>
-                        <h3 class="services__title">UI /UX Design</h3>
-                        <p class="services__desc">Services that I offer and work, with years of experience in the work area.</p>
-                        <a href="#portfolio" class="button">See More</a>
-                     </div> -->
-                     <div class="services__data">
-                        <i class='bx bx-laptop services__icon'></i>
-                        <h3 class="services__title">Data Entry</h3>
-                        <p class="services__desc">Offering data transfer between files and assistance in drafting emails. Eager to gain experience and provide accurate, efficient work.</p>
-                        <a href="#portfolio" class="button">See More</a>
-                     </div>
-                    
-                 </div>
+            <div class="quali__data">
+              <h3 class="quali__area">-</h3>
+              <div class="quali__box">
+                <span class="quali__work">
+                  <i class='bx bx-briefcase-alt quali__icon'></i>
+                  -
+                </span>
+                <span class="quali__work">
+                  <i class='bx bx-calendar-alt quali__icon'></i>
+                  -
+                </span>
 
-            </section>
-            
-            <!--===== PROJECT IN MIND =====-->
-            <section class="project section bd-container" id="projects">
-                <div class="project__container bd-grid">
-                  <div class="project__data">
-                    <i class='bx bxs-chat project__icon' ></i>
-                    <div>
-                        <h2 class="project__title project-tile">Project in Mind</h2>
-                        <p class="project__desc">Let's build your project and give it a life.</p>
-                    </div>
-                    <div>
-                        <a href="mailto:nthnlgmz08@gmail.com" class="button button-white">Hire Me</a>
-                    </div>
-                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+-->
+      <div class="quali__content">
+        <h2 class="quali__title">
+          <i class='bx bx-library quali__title-icon'></i>
+          Education
+        </h2>
 
-                </div>
-            </section>
+        <div class="bd-grid">
+          <div class="quali__data">
+            <h3 class="quali__area">BS in Mechatronics Engineering</h3>
+            <div class="quali__box">
+              <span class="quali__work">
+                <i class='bx bxs-book quali__icon'></i>
+                Batangas State University - The National Engineering University - Alangilan Campus
+              </span>
+              <span class="quali__work">
+                <i class='bx bx-calendar-alt quali__icon'></i>
+                Aug 2020 - July 2024
+              </span>
 
-            <!--===== PORTFOLIO =====-->
-            <section class="portfolio section bd-container" id="portfolio">
-                <span class="section-subtitle">My Recent Projects</span>
-                <h2 class="section-title">Portfolio</h2>
-                <div class="portfolio__nav">
-                    <span class="portfolio__item active--portfolio"data-filter="all">All</span> <!-- 
-                    <span class="portfolio__item" data-filter=".web">Web</span>
-                    <span class="portfolio__item" data-filter=".ux">UI/UX</span>
-                    <span class="portfolio__item" data-filter=".app">App</span> -->
-                </div>
-                <div class="portfolio__container bd-grid">
-                 <!--   <div class="portfolio__content mix web">
-                        <a href="#" class=""><img src="https://raw.githubusercontent.com/bedimcode/responsive-portfolio-Clay-Doe/main/assets/img/work1.jpg" alt="" class="portfolio__img"></a>
-                        <div class="portfolio__data">
-                            <span class="portfolio__subtitle">Web Development</span>
-                            <a href="#"><h2 class="portfolio__title">New Portfolio of work done for a client</h2></a>
-                            <a href="#" class="button button-link">View Details</a>
-                        </div>
-                        
-                    </div>
-                    <div class="portfolio__content mix web">
-                        <a href="#" class=""><img src="https://raw.githubusercontent.com/bedimcode/responsive-portfolio-Clay-Doe/main/assets/img/work2.jpg" alt="" class="portfolio__img"></a>
-                        <div class="portfolio__data">
-                            <span class="portfolio__subtitle">Web Development</span>
-                            <a href="#"><h2 class="portfolio__title">New Portfolio of work done for a client</h2></a>
-                            <a href="#" class="button button-link">View Details</a>
-                        </div>
-                        
-                    </div>
-                    <div class="portfolio__content mix ux">
-                        <a href="#" class=""><img src="https://raw.githubusercontent.com/bedimcode/responsive-portfolio-Clay-Doe/main/assets/img/work3.jpg" alt="" class="portfolio__img"></a>
-                        <div class="portfolio__data">
-                            <span class="portfolio__subtitle">UI/UX</span>
-                            <a href="#"><h2 class="portfolio__title">New Portfolio of work done for a client</h2></a>
-                            <a href="#" class="button button-link">View Details</a>
-                        </div>
-                        
-                    </div>
-                    <div class="portfolio__content mix ux">
-                        <a href="#" class=""><img src="https://raw.githubusercontent.com/bedimcode/responsive-portfolio-Clay-Doe/main/assets/img/work4.jpg" alt="" class="portfolio__img"></a>
-                        <div class="portfolio__data">
-                            <span class="portfolio__subtitle">UI/UX</span>
-                            <a href="#"><h2 class="portfolio__title">New Portfolio of work done for a client</h2></a>
-                            <a href="#" class="button button-link">View Details</a>
-                        </div>
-                        
-                    </div>
-                    <div class="portfolio__content mix app">
-                        <a href="#" class=""><img src="https://raw.githubusercontent.com/bedimcode/responsive-portfolio-Clay-Doe/main/assets/img/work5.jpg" alt="" class="portfolio__img"></a>
-                        <div class="portfolio__data">
-                            <span class="portfolio__subtitle">Mobile App</span>
-                            <a href="#"><h2 class="portfolio__title">New Portfolio of work done for a client</h2></a>
-                            <a href="#" class="button button-link">View Details</a>
-                        </div>
-                        
-                    </div>
-                    <div class="portfolio__content mix app">
-                        <a href="#" class=""><img src="https://raw.githubusercontent.com/bedimcode/responsive-portfolio-Clay-Doe/main/assets/img/work6.jpg" alt="" class="portfolio__img"></a>
-                        <div class="portfolio__data">
-                            <span class="portfolio__subtitle">Mobile App</span>
-                            <a href="#"><h2 class="portfolio__title">New Portfolio of work done for a client</h2></a>
-                            <a href="#" class="button button-link">View Details</a>
-                        </div>
-                        -->
-                    </div>
-                </div>
-            </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
 
-            <!--===== TESTIMONIAL =====-->
-            <section class="reviews section bd-container"  id='welcome-section'>
-                <span class="section-subtitle">My Client's Reviews </span>
-                <h1 class="section-title">Reviews</h1>
+    <!--===== SERVICES =====-->
+    <section class="services section bd-container" id="services">
+      <span class="section-subtitle">What I offer</span>
+      <h2 class="section-title">Services</h2>
 
-                <div class="reviews__container swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="reviews__content swiper-slide">
-                            <img src="https://raw.githubusercontent.com/bedimcode/responsive-portfolio-Clay-Doe/main/assets/img/testimonial1.jpg" alt="" class="reviews__img">
-                            <h3 class="reviews__title">NA</h3>
-                            <span class="reviews__client">Client</span>
-                            <p class="reviews__desc">NA</p>
-                        </div>
-                  <!--       <div class="reviews__content swiper-slide">
+      <div class="services__container bd-grid">
+        <div class="services__data">
+          <svg fill="#3e0e12" width="64px" height="64px" viewBox="0 0 32.00 32.00" version="1.1" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>arduino</title>
+              <path d="M30.258 9.777h0.075c0.087 0 0.125-0.012 0.125-0.087 0-0.062-0.038-0.087-0.125-0.087h-0.087v0.175zM30.233 10.152h-0.125v-0.65l0.25-0.012c0.010-0.001 0.023-0.001 0.035-0.001 0.069 0 0.134 0.014 0.193 0.040l-0.003-0.001c0.045 0.025 0.075 0.072 0.075 0.126 0 0.004-0 0.008-0 0.012l0-0.001c0 0.075-0.050 0.125-0.137 0.137 0.062 0.025 0.087 0.075 0.112 0.162l0.038 0.162h-0.15c-0.025-0.025-0.025-0.087-0.050-0.162-0.025-0.063-0.050-0.087-0.137-0.087h-0.062l-0.025 0.275zM29.859 9.827c-0 0.004-0 0.009-0 0.014 0 0.268 0.218 0.486 0.486 0.486 0.005 0 0.010-0 0.015-0l-0.001 0c0.265-0.014 0.475-0.232 0.475-0.5s-0.21-0.486-0.474-0.5l-0.001-0c-0.013-0.001-0.027-0.002-0.042-0.002-0.254 0-0.46 0.206-0.46 0.46 0 0.015 0.001 0.029 0.002 0.044l-0-0.002zM30.996 9.827c0 0.004 0 0.010 0 0.015 0 0.344-0.279 0.624-0.624 0.624-0.014 0-0.027-0-0.041-0.001l0.002 0c-0.008 0-0.016 0.001-0.025 0.001-0.348 0-0.63-0.279-0.637-0.625v-0.001c0.008-0.36 0.301-0.649 0.662-0.65h0c0.009-0.001 0.020-0.001 0.032-0.001 0.348 0 0.631 0.282 0.631 0.631 0 0.003-0 0.005-0 0.008v-0zM23.923 16.737h1.487v-1.45h-1.5v-1.487h-1.412v1.5h-1.5v1.437h1.5v1.475h1.437v-1.462zM6.265 16.737h4.424v-1.45h-4.411v1.45zM17.25 16c1.037-2.222 2.974-3.876 5.328-4.511l0.058-0.013c0.194-0.033 0.418-0.052 0.646-0.052 0.045 0 0.090 0.001 0.135 0.002l-0.007-0c0.041-0.001 0.090-0.002 0.139-0.002 2.552 0 4.628 2.034 4.697 4.569l0 0.006c-0.083 2.544-2.165 4.575-4.721 4.575-0.036 0-0.072-0-0.108-0.001l0.005 0c-0.25 0-0.525-0.025-0.775-0.050-2.41-0.652-4.345-2.305-5.365-4.473l-0.021-0.050zM9.102 20.499c-0.197 0.033-0.425 0.052-0.657 0.052-0.046 0-0.092-0.001-0.137-0.002l0.007 0c-0.030 0.001-0.066 0.001-0.102 0.001-2.554 0-4.633-2.032-4.709-4.568l-0-0.007c0.083-2.544 2.165-4.575 4.721-4.575 0.036 0 0.072 0 0.108 0.001l-0.005-0c0.25 0 0.525 0.025 0.787 0.050 2.417 0.639 4.356 2.296 5.365 4.473l0.021 0.050c-1.025 2.23-2.967 3.889-5.329 4.511l-0.057 0.013zM30.771 16c-0.077-3.93-3.28-7.087-7.222-7.087-0.044 0-0.089 0-0.133 0.001l0.007-0c-0.362 0-0.75 0.025-1.125 0.062-2.731 0.545-5.004 2.178-6.387 4.42l-0.024 0.042c-1.423-2.273-3.694-3.902-6.36-4.45l-0.063-0.011c-0.375-0.037-0.75-0.062-1.125-0.062-0.034-0.001-0.074-0.001-0.114-0.001-3.941 0-7.145 3.156-7.222 7.079l-0 0.007c0.077 3.93 3.281 7.086 7.222 7.086 0.040 0 0.080-0 0.12-0.001l-0.006 0c0.406-0.001 0.805-0.028 1.196-0.080l-0.047 0.005c2.734-0.539 5.011-2.169 6.399-4.407l0.024-0.041c1.42 2.275 3.693 3.905 6.36 4.45l0.063 0.011c0.387 0.037 0.75 0.062 1.137 0.062 0.023 0 0.049 0 0.076 0 3.941 0 7.145-3.156 7.221-7.079l0-0.007z"></path>
+            </g>
+          </svg>
+          <h3 class="services__title">Arduino/ESP32 Programming</h3>
+          <p class="services__desc"></p>
+          <a href="#portfolio" class="button">See More</a>
+        </div>
+        <div class="services__data">
+          <i class='bx bx-laptop services__icon'></i>
+          <h3 class="services__title">Web Development</h3>
+          <p class="services__desc"></p>
+          <a href="#portfolio" class="button">See More</a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--===== PROJECT IN MIND =====-->
+    <section class="project section bd-container" id="projects">
+      <div class="project__container bd-grid">
+        <div class="project__data">
+          <i class='bx bxs-chat project__icon'></i>
+          <div>
+            <h2 class="project__title project-tile">Project in Mind</h2>
+            <p class="project__desc">Let's build your project and give it a life.</p>
+          </div>
+          <div>
+            <a href="mailto:nthnlgmz08@gmail.com" class="button button-white">Hire Me</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--===== PORTFOLIO =====-->
+    <section class="portfolio section bd-container" id="portfolio">
+      <span class="section-subtitle">My Recent Projects</span>
+      <h2 class="section-title">Portfolio</h2>
+      <div class="portfolio__nav">
+        <span class="portfolio__item active--portfolio" data-filter="all">All</span>
+        <span class="portfolio__item" data-filter=".arduino">Arduino Prog.</span>
+        <span class="portfolio__item" data-filter=".webdev">Web Development</span>
+      </div>
+      <div class="portfolio__container bd-grid">
+        <div class="portfolio__content mix arduino">
+          <a class=""><img src="https://github.com/nthnlgmz/imgs/assets/143614589/75c70190-b5e9-40ef-b35d-ade93025b440" style="width: 100%; height: 250px; object-fit: cover; clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);">
+          </a>
+          <div class="portfolio__data">
+            <span class="portfolio__subtitle">AutoPour Pub: Crafting Drinks with Bartending Machine</span></a><br>
+            <!-- <a href="#" class="button button-link">View Details</a> -->
+          </div>
+        </div>
+
+        <div class="portfolio__content mix webdev">
+          <a class=""><img src="https://github.com/user-attachments/assets/b1878926-3a05-4a13-910e-fecec200f3ee" style="width: 100%; height: 250px; object-fit: cover; clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);">
+          </a>
+          <div class="portfolio__data">
+            <span class="portfolio__subtitle">Anilao Diving and Photography</span></a><br>
+            <a href="https://anilaodivingandphotography.com" target="_blank" class="button button-link">View Website</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--===== TESTIMONIAL =====-->
+    <section class="reviews section bd-container" id='welcome-section'>
+      <span class="section-subtitle">My Client's Reviews </span>
+      <h1 class="section-title">Reviews</h1>
+
+      <div class="reviews__container swiper-container">
+        <div class="swiper-wrapper">
+          <div class="reviews__content swiper-slide">
+            <img src="https://raw.githubusercontent.com/bedimcode/responsive-portfolio-Clay-Doe/main/assets/img/testimonial1.jpg" alt="" class="reviews__img">
+            <h3 class="reviews__title">Rene Camacho</h3>
+            <span class="reviews__client">Client</span>
+            <p class="reviews__desc">NA</p>
+          </div>
+          <!--
+                <div class="reviews__content swiper-slide">
                             <img src="https://raw.githubusercontent.com/bedimcode/responsive-portfolio-Clay-Doe/main/assets/img/testimonial2.jpg" alt="" class="reviews__img">
                             <h3 class="reviews__title">Linda Adams</h3>
                             <span class="reviews__client">Client</span>
@@ -312,42 +278,42 @@
                             <h3 class="reviews__title">Sam Hamilton</h3>
                             <span class="reviews__client">Client</span>
                             <p class="reviews__desc">This Company Does a very good service, offers the best deals and does a good job. I recommend it.</p>
-                        </div> -->
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-                </section>
+                        </div> 
+        </div>
+        <div class="swiper-pagination"></div> -->
+        </div>
+    </section>
 
-            <!--===== CONTACTME =====-->
-            <section class="contact section bd-container" id="contact">
-                <span class="section-subtitle">Let's help you in your projects</span>
-                <h2 class="section-title">Contact Me</h2>
-                <div class="contact__container bd-grid">
-                    <div class="contact__content bd-grid">
-                        <div class="contact__box">
-                            <i class='bx bxs-home contact-icon'></i>
-                            <h3 class="contact__title">Location</h3>
-                            <span class="contact__desc">Batangas, Philippines</span>
-                        </div>
-                        <!-- <div class="contact__box">
+    <!--===== CONTACTME =====-->
+    <section class="contact section bd-container" id="contact">
+      <span class="section-subtitle">Let's help you in your projects</span>
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact__container bd-grid">
+        <div class="contact__content bd-grid">
+          <div class="contact__box">
+            <i class='bx bxs-home contact-icon'></i>
+            <h3 class="contact__title">Location</h3>
+            <span class="contact__desc">Batangas, Philippines</span>
+          </div>
+          <!-- <div class="contact__box">
                             <i class='bx bxs-phone contact-icon'></i>
                             <h3 class="contact__title">Phone</h3>
                             <span class="contact__desc">+201x-xxxx-xxxx</span>
                         </div> -->
-                        <div class="contact__box">
-                            <i class='bx bxs-envelope contact-icon'></i>
-                            <h3 class="contact__title">E-mail</h3>
-                            <span class="contact__desc">nthnlgmz08@gmail.com</span>
-                        </div>
-                        <div class="contact__box">
-                            <i class='bx bxs-chat contact-icon'></i>
-                            <h3 class="contact__title">Chat</h3>
-                            <a href="https://m.me/nthnlgmz" class="contact__social"><i class='bx bxl-messenger'></i>
-                            <a href="https://t.me/nthnlgmz" class="contact__social"><i class='bx bxl-telegram' ></i>
-                            </a>
-                        </div>
-                    </div>
-                  <!--   <form action="" class="contact__form">
+          <div class="contact__box">
+            <i class='bx bxs-envelope contact-icon'></i>
+            <h3 class="contact__title">E-mail</h3>
+            <span class="contact__desc">nthnlgmz08@gmail.com</span>
+          </div>
+          <div class="contact__box">
+            <i class='bx bxs-chat contact-icon'></i>
+            <h3 class="contact__title">Chat</h3>
+            <a href="https://m.me/nthnlgmz" class="contact__social"><i class='bx bxl-messenger'></i>
+              <a href="https://t.me/nthnlgmz" class="contact__social"><i class='bx bxl-telegram'></i>
+              </a>
+          </div>
+        </div>
+        <!--   <form action="" class="contact__form">
                         <div class="contact__inputs">
                             <input type="text" placeholder ="Name" class="contact__input">
                             <input type="email" placeholder ="Email" class="contact__input">
@@ -359,42 +325,42 @@
                         <textarea class="contact__input" placeholder="Message"name="" id="" cols="0" rows="7"></textarea>
                         <div class="send__button"><input type="submit" value="Send" class="button contact__button"></form></div>
                     </form> -->
-                </div>
-            </section>
-        </main>
+      </div>
+    </section>
+  </main>
 
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <div class="footer__container bd-container">
-                <h1 class="footer__title">Nathaniel Gomez</h1>
-                <p class="footer__desc">I'm Nathaniel Gomez and this is my personal website, consult me here.</p>
+  <!--===== FOOTER =====-->
+  <footer class="footer">
+    <div class="footer__container bd-container">
+      <h1 class="footer__title">Nathaniel Gomez</h1>
+      <p class="footer__desc">I'm Nathaniel Gomez and this is my personal website, consult me here.</p>
 
-                <div class="footer__social">
-                    <a href="https://www.linkedin.com/in/nthnlgmz" class="footer__link"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="https://github.com/nthnlgmz" class="footer__link" id="profile-link" target="_blank"><i class='bx bxl-github' ></i></a>
-                   <a href="mailto:nthnlgmz08@gmail.com" class="footer__link"><i class='bx bx-envelope'></i>
-                    <a href="https://m.me/nthnlgmz" class="footer__link"><i class="fab fa-facebook-messenger"></i></a>
+      <div class="footer__social">
+        <a href="https://www.linkedin.com/in/nthnlgmz" class="footer__link"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/nthnlgmz" class="footer__link" id="profile-link" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="mailto:nthnlgmz08@gmail.com" class="footer__link"><i class='bx bx-envelope'></i>
+          <a href="https://m.me/nthnlgmz" class="footer__link"><i class="fab fa-facebook-messenger"></i></a>
 
-                     
-                </div>
-                <p class="footer__copy">&#169; 2024 Nathaniel Gomez. All rights reserved</p>
-            </div>
-        </footer>
-        
-        <!-- ===== MIXITUP FILTER ===== -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.js" integrity="sha512-fuxK9KrfYYxsXOm+VTYLEX3vOKymX2CDP+X1q0vsTwe9LPyJBSC3LXPu79ZNZiNCFrSzzMklmp5bU9Da/1TQEw==" crossorigin="anonymous"></script>
-        <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
-          <!-- ===== Mixitup ===== -->
-         
-        <!-- ===== SWIPER JS ===== -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        
-        <!-- ===== GSAP ===== -->
-        <script src="gsap.js"></script>
-        
-        <!--===== MAIN JS =====-->
-        <script src="script.js"></script>
-    </body>
+      </div>
+      <p class="footer__copy">&#169; 2024 Nathaniel Gomez. All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- ===== MIXITUP FILTER ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.js" integrity="sha512-fuxK9KrfYYxsXOm+VTYLEX3vOKymX2CDP+X1q0vsTwe9LPyJBSC3LXPu79ZNZiNCFrSzzMklmp5bU9Da/1TQEw==" crossorigin="anonymous"></script>
+  <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+  <!-- ===== Mixitup ===== -->
+
+  <!-- ===== SWIPER JS ===== -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- ===== GSAP ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+
+  <!--===== MAIN JS =====-->
+  <script src="script.js"></script>
+</body>
+
 </html>
